@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="690.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartSceneController">
+   <children>
+       <Label fx:id="TitleLabel" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="253.0" layoutY="115.0" prefHeight="132.0" prefWidth="376.0" text="Battleship">
+         <font>
+            <Font name="Century Gothic" size="72.0" />
+         </font>
+      </Label>
+      <Button fx:id="StartGameButton" alignment="CENTER" contentDisplay="CENTER" layoutX="374.0" layoutY="278.0" mnemonicParsing="false" onAction="#StartButtonClicked" prefHeight="48.0" prefWidth="134.0" text="Start Game">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font></Button>
+      <Button fx:id="ExitButton" layoutX="374.0" layoutY="343.0" mnemonicParsing="false" onAction="#ExitButtonClicked" prefHeight="48.0" prefWidth="134.0" text="Exit">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <ImageView fitHeight="305.0" fitWidth="299.0" layoutX="450.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@battleship.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="201.0" fitWidth="246.0" layoutX="165.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@battleship.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
